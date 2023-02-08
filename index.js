@@ -24,9 +24,9 @@ app.listen(3000, () =>
 // http://localhost:3000/luce?stato=on
 app.get("/luce", async function (req, res) {
   console.log("in get luce", req.query.stato);
-  let res = await sendMessage(req.query.stato, "led");
-  if (res) res.send("messaggio inviato");
-  else res.send("error: " + res);
+  let result = await sendMessage(req.query.stato, "led");
+  if (result) res.send("messaggio inviato");
+  else res.send("error: " + result);
 });
 
 async function sendMessage(message, topic) {

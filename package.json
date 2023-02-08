@@ -1,17 +1,16 @@
 {
-  "name": "pub-sub-js",
+  "name": "apiserver",
   "version": "1.0.0",
-  "description": "NodeJS IoT SDK v2 Pub Sub JS Sample",
-  "homepage": "https://github.com/aws/aws-iot-device-sdk-js-v2",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aws/aws-iot-device-sdk-js-v2.git"
+  "description": "nodeJS server for IoT Core things management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [
-    "AWS SDK Common Runtime Team <aws-sdk-common-runtime@amazon.com>"
-  ],
-  "license": "Apache-2.0",
+  "author": "mattia.pogliani",
+  "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "aws-crt": "^1.11.0",
     "aws-iot-device-sdk-v2": "^1.7.0",
     "util": "^0.12.4",
